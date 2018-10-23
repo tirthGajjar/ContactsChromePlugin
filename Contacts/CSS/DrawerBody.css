@@ -1,0 +1,93 @@
+#DrawerBody {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+div#profileSection {
+    height: 10%;
+}
+
+.inboxsdk__drawer_title_bar {
+    background-color: wheat !important;
+}
+
+.inboxsdk__drawer_title{
+    font-size: 17px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+
+div#profilePhoto {
+    width: 23%;
+    height: 100%;
+    display: inline-block;
+}
+
+div#profileNameEmail {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    vertical-align: top;
+    margin-top: 12px;
+}
+
+div#profileName {
+    width: 100%;
+    padding:5%;
+    height: auto;
+    font-size: 25px;
+}
+
+div#profilePhoto {
+    border-radius: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 80%;
+    width: 16%;
+    margin: 14px;
+}
+
+a#profileEmail {
+    padding: 0 0 0 8%;
+    height: auto;
+    display: inline-block;
+    font-size: 17px;
+    font-style: normal;
+}
+
+
+div.contactName {
+    padding-bottom: 7px;
+}
+
+div.contactNameNumber {
+    padding: 12px 20px;
+    font-size: 17px;
+}
+
+div#contactsSection {
+    overflow-y: auto;
+    max-height: 85%;
+}
+
+div.contactNameNumber {
+    display: inline-block;
+}
+
+.contactEmail {
+    float: right;
+    padding: 20px;
+    margin: 15px 18px 9px 0px;
+    background-image: url("https://drive.google.com/uc?export=view&id=1RqR0KORVd_gcG8tj52sQyFBw6-UT5Vvc");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+
+.contactlistItem:hover {
+    background-color: aliceblue;
+}

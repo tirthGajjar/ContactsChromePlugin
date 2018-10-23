@@ -1,0 +1,46 @@
+{
+  "name": "Contacts",
+  "description": "Easily find contcats within Gmail",
+  "version": "1",
+  "web_accessible_resources": [
+    "CSS/DrawerBody.css"
+  ],
+  "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsMt+Ixs8n79ogfIPrCgpQwOOJAyKu9ac3qh3zOpbbI2xMYvL/xo/bthtJW/bI1d0b1HHxD5/Snixjsh5RRtidKXOkAkVRp/tllRv32MwmXNjppHj5u3mL/mQPWXzV7NpyKGV2C0PEHFpXDF+m/6Oi01Yo24P/9d5UL72pSSwZPsxvCSG3trP25JvjLBbOiFDwXy06F9IPJMA+fND7XtIXVEe/MBTKvrMKEPNnyCJnFk21AqLOjwJXU0JTq/4kyXyECcIfWGeKN8gZKXNtJxG9VeYBCafUK4Hi1tyPUJuJjVClU9GXgZEBNBznSzkagsoSZNKUYu/VKReC/sAkLBmvQIDAQAB",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*",
+        "https://inbox.google.com/*"
+      ],
+      "js": [
+        "lib/inboxsdk.js",
+        "lib/underscore.js",
+        "Utils/elements.js",
+        "content.js"
+      ],
+      "css": [
+        "CSS/DrawerBody.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+  },
+  "permissions": [
+    "https://mail.google.com/",
+    "https://inbox.google.com/",
+    "identity",
+    "storage",
+    "identity.email"
+  ],
+  "oauth2": {
+    "client_id": "190712227295-6g154ma7dpfbm19moqo93sce2ive3i3g.apps.googleusercontent.com",
+    "scopes": [
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+},
+  "manifest_version": 2
+}
